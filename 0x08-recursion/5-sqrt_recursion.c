@@ -1,21 +1,29 @@
 #include "main.h"
-
+int squareroot(int n, int i);
 /**
- * _sqrt  - the function that finds the square root of a given value.
- * @low: lower than sqrt value.
- * @high: higher than sqrt value
- * Return: square root(sqrt).
+ * _sqrt_recursion - a function that finds square root of any posetive intger
+ * @n: input
+ * Return: Always 0 (Success)
  */
-int _sqrt(int low, int high)
+int _sqrt_recursion(int n)
 {
-	if (low > high)
-	{
+	if (n < 0)
 		return (-1);
-	}
-	else if (low * low == high)
-	{
-		return (low);
-	}
-
-	return (_sqrt(low + 1, high));
+	else
+		return (squareroot(n, (n + 1) / 2));
+}
+/**
+ * squareroot - it finds the root of a number
+ * @n: input
+ * @i: counter
+ * Return: if square root
+ */
+int squareroot(int n, int i)
+{
+	if (i < 1)
+		return (-1);
+	else if (i * i == n)
+		return (i);
+	else
+		return (squareroot(n, i - 1));
 }
