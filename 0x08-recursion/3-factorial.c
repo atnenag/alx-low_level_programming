@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int factorial(int n) is the fanction that return the factorial of given no n
+ * factorial - is the fanction that return the factorial of given no n
  * @n: integer
  * Return: factorial value of n
  */
