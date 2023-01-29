@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
-* THe function that prints the name of file in macros
-*/
+
+/**
+ *2-main.c - a function that prints the name of current file in macros.
+ */
 
 int main(void)
 {
